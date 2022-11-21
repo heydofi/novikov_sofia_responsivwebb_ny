@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden</title>
+    <link rel="icon" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header och navigering -->
+    <header>
+        <nav>
+            <a href="index.html"><img src="untitle.svg" class="logo" alt="Webbsidans Logotyp"></a>
+
+            <div class="navigation">
+                <a href="om.html">Om oss</a>
+                <a href="vaxter.html">Våra växter</a>
+                <a href="validering.html">Validering</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Formulär -->
+    <main>
+        <section class="form">
+            <h2>Håll dig uppdaterad</h2>
+            <p>Skriv upp dig för vårt nyhetsbrev för information inför öppningen och
+                uppdateringar om vår nya butik och växter!
+            </p>
+
+            <form action="form.php">
+
+                <input type="text" id="fnamn" name="from" required><br><br>
+
+                <input type="text" id="enamn" name="from" required><br><br>
+
+                <input type="text" id="email" name="from" required><br><br>
+
+                <input type="text" id="phone" name="from" required><br><br>
+
+                <h2>Vilken växt vill du ha mer av i vår nya butik? Rösta här!</h2>
+            </form>
+
+            <form action="form.php">
+                <select name="morePlants">
+                    <option>Gullranka</option>
+                    <option>Hoya</option>
+                    <option>Peperomia</option>
+                    <option>Svärmors tunga</option>
+                    <option>Fikus</option>
+                    <option>(Mer) Philodendron</option>
+                </select>
+                <br><br>
+                <button type="submit" formaction="tack.html">Skicka</button>
+            </form>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <button onclick="darkmode()">Dark mode</button>
+
+        <script>
+            function darkmode() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+
+        <a href="mailto:sofia.novikov@gmail.com">Maila oss</a>
+
+        <script>
+            if (Date.parse(document.lastModified) != 0)
+                document.write('<p><large>Senast ändrad: '
+                    + document.lastModified
+                    + '</small>');
+        </script>
+
+    </footer>
+</body>
+
+</html>

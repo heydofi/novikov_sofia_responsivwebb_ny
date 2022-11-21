@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden</title>
+    <link rel="icon" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header och navigering -->
+    <header>
+        <nav>
+            <a href="index.html"><img src="untitle.svg" class="logo" alt="Webbsidans Logotyp"></a>
+
+            <div class="navigation">
+                <a href="om.html">Om oss</a>
+                <a href="vaxter.html">Våra växter</a>
+                <a href="validering.html">Validering</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Block med bild och kort info om butiken -->
+    <section class="om">
+        <section>
+            <div class="butik"><img src="butik.jpg" alt="Bild på hur butiken ser ut utanför"></div>
+            <h2>Sneak peek</h2>
+            <p> Få en inblick i vår uppdaterade och nyrenoverade
+                butik som äntligen öppnar nästa år! <br><br> Tillsammans med ett större utbud av unika växter ska det
+                finnas allt för livet med växter - från blommor, krukväxter och
+                allt du behöver för att odla själv, till jord, gödsel och trädgård.
+            </p>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <button onclick="darkmode()">Dark mode</button>
+
+        <script>
+            function darkmode() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+
+        <a href="mailto:sofia.novikov@gmail.com" class="dark-mode">Maila oss</a>
+
+        <script>
+            if (Date.parse(document.lastModified) != 0)
+                document.write('<p><large>Senast ändrad: '
+                    + document.lastModified
+                    + '</small>');
+        </script>
+
+    </footer>
+
+</body>
+
+</html>
