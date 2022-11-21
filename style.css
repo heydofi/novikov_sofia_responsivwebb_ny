@@ -178,14 +178,6 @@ footer a {
     margin-right: 40px;
 }
 
-
-@media (prefers-color-scheme:dark) {
-    body {
-        background: #000;
-    }
-}
-
-
 @media only screen and (max-width: 600px) {
 
     a {
